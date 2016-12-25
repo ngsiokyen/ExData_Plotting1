@@ -13,7 +13,7 @@ png(filename = './plot4.png', width = 480, height = 480, units="px")
 
 ## plot Figure 4
 par(mfrow = c(2, 2))
-plot(datafile2$datetime, datafile2$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatt)", type = "l")
+plot(datafile2$datetime, datafile2$Global_active_power, xlab = "", ylab = "Global Active Power", type = "l")
 plot(datafile2$datetime, datafile2$Voltage, xlab = "datetime", ylab = "Voltage", type = "l")
 plot(datafile2$datetime, datafile2$Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l")
 lines(datafile2$datetime, datafile2$Sub_metering_2, col = "red")
